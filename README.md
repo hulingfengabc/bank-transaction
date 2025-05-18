@@ -178,7 +178,7 @@ http://localhost:8080/api/transactions
 http://localhost:8080/h2-console
 ##### prometheus url
 http://localhost:9090
-##### grafana url
+##### grafana url(userAcount:admin, password:admin)
 http://localhost:3000
 
 ## Areas for Future Optimization
