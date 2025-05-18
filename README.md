@@ -63,7 +63,7 @@ The project will be presented in the following aspects sequentially
 + spring-boot-starter-data-jpa
 + h2 (in memory database)
 + micrometer-registry-prometheus (monitor collect)
-+ grafana (Chosen for visualization due to its)
++ grafana (monitor visualization)
 + caffeine (cache)
 + spring-boot-starter-cache (cache)
 + resilience4j-spring-boot2(rate limiting)
