@@ -25,10 +25,8 @@
     <div class="form-container">
         <h2 class="mb-4">Add Transaction</h2>
 
-        <!-- 错误消息 -->
         <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}"></div>
 
-        <!-- 成功消息 -->
         <div th:if="${successMessage}" class="alert alert-success" th:text="${successMessage}"></div>
 
         <form th:action="@{/transactions/add}" th:object="${transaction}" method="post">

@@ -1,4 +1,3 @@
--- 初始化交易数据
 INSERT INTO transaction (type, amount, description, date) VALUES
 ('DEPOSIT', 1000.00, 'test1', '2025-01-01 09:00:00'),
 ('WITHDRAWAL', 200.50, 'test2', '2025-01-05 14:30:00'),
@@ -7,7 +6,6 @@ INSERT INTO transaction (type, amount, description, date) VALUES
 ('DEPOSIT', 0.01, 'test5', '2025-04-01 00:00:00'),
 ('WITHDRAWAL', 999999999.99, 'test6', '2025-12-31 23:59:59');
 
--- 添加分页测试数据
 INSERT INTO transaction (type, amount, description, date) VALUES
 ('DEPOSIT', 1234.56, 'test7', '2025-05-10 11:22:33'),
 ('WITHDRAWAL', 789.01, 'test8', '2025-06-15 16:44:55'),

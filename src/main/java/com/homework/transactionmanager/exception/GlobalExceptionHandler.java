@@ -10,7 +10,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
-    // 处理资源未找到异常
     @ExceptionHandler(ResourceNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public String handleResourceNotFound(ResourceNotFoundException ex, Model model) {
@@ -18,7 +17,6 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return "error/404";
     }
 
-    // 处理其他异常
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public String handleAllExceptions(Exception ex, Model model) {

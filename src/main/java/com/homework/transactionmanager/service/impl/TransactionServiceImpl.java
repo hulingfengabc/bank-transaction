@@ -13,7 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -27,12 +26,6 @@ public class TransactionServiceImpl implements TransactionService {
     public TransactionServiceImpl(TransactionRepository transactionRepository, TransactionMetrics transactionMetrics) {
         this.transactionRepository = transactionRepository;
         this.transactionMetrics = transactionMetrics;
-    }
-
-    @Override
-    @Cacheable("transactions")
-    public List<Transaction> getAllTransactions() {
-        return transactionRepository.findAll();
     }
 
     @Override

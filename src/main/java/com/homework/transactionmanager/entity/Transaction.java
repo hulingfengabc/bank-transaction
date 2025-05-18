@@ -29,13 +29,11 @@ public class Transaction {
     @Positive(message = "The amount must be a positive number.")
     private BigDecimal amount;
 
-    @FutureOrPresent(message = "The date cannot be a past date.")
-    private LocalDateTime date;
+    private LocalDateTime date = LocalDateTime.now();
 
     @Size(max = 255, message = "描述不能超过255个字符")
     private String description;
 
-    // 辅助方法，用于判断两个交易是否重复
     public boolean isDuplicate(Transaction other) {
         return this.type.equals(other.type)
                 && this.amount.equals(other.amount)
