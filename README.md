@@ -5,6 +5,10 @@
 ```plainText
 transaction-manager/
 ├── src/
+├── k8s/
+│   ├── app/
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
 │   ├── main/
 │   │   ├── java/com/homework/transactionmanager/
 │   │   │   ├── config/
